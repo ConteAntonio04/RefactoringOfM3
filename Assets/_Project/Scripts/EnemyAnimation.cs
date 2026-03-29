@@ -6,25 +6,25 @@ public class EnemyAnimation : MonoBehaviour
 {
     private Animator animator;
 
-    private EnemyController _enemyController;
+    private EnemyController enemyController;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        _enemyController = GetComponent<EnemyController>();
+        enemyController = GetComponent<EnemyController>();
     }
     void Update()
     {
-        if (_enemyController.enemyIsAlive)
+        if (enemyController.enemyIsAlive)
         {
-            if (_enemyController.enemyIsHit)
+            if (enemyController.enemyIsHit)
             {
-                _enemyController.enemyIsHit = false;
+                enemyController.enemyIsHit = false;
                 animator.SetTrigger("IsHit");
             }
             else
             {
-                Vector2 direction = _enemyController.direction;
+                Vector2 direction = enemyController.direction;
                 bool isWalking = direction != Vector2.zero;
                 animator.SetBool("IsWalking", isWalking);
                 if (isWalking)

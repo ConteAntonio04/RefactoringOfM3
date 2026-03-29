@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private EnemyManager _enemyManger;
+    private EnemyManager enemyManger;
 
     [SerializeField]
     private float speed = 2.5f;
@@ -22,15 +22,15 @@ public class EnemyController : MonoBehaviour
 
     void OnEnable()
     {
-        _enemyManger.AddEnemy(this);
+        enemyManger.AddEnemy(this);
     }
     void OnDisable()
     {
-        _enemyManger.RemoveEnemy(this);
+        enemyManger.RemoveEnemy(this);
     }
     void Awake()
     {
-        _enemyManger = FindObjectOfType<EnemyManager>();
+        enemyManger = FindObjectOfType<EnemyManager>();
     }
     void Start()
     {

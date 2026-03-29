@@ -17,11 +17,11 @@ public class Gun : MonoBehaviour
 
     private float lastShootTime;
     
-    private EnemyManager _enemyManager;
+    private EnemyManager enemyManager;
 
     private void Awake()
     {
-        _enemyManager = FindObjectOfType<EnemyManager>();
+        enemyManager = FindObjectOfType<EnemyManager>();
     }
     void Update()
     {
@@ -37,7 +37,7 @@ public class Gun : MonoBehaviour
 
         float _nearestDist = fireRange;
 
-        foreach (EnemyController currentEnemy in _enemyManager.listEnemies)
+        foreach (EnemyController currentEnemy in enemyManager.listEnemies)
         {
             float _currentDist = Vector2.Distance(transform.position, currentEnemy.transform.position);
             if (_currentDist < _nearestDist)

@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     public bool playerIsAlive = true;
 
-    public Collider2D _collider;
+    public Collider2D Collider;
 
     void Awake()
     {
@@ -26,9 +26,9 @@ public class PlayerController : MonoBehaviour
         {
             rb = GetComponent<Rigidbody2D>();
         }
-        if (_collider == null)
+        if (Collider == null)
         {
-            _collider = GetComponent<Collider2D>();
+            Collider = GetComponent<Collider2D>();
         }
     }
 

@@ -9,14 +9,14 @@ public class LifeController : MonoBehaviour
 
     private int life;
 
-    private EnemyController _enemyControl;
+    private EnemyController enemyControl;
 
-    private PlayerController _playerControl;
+    private PlayerController playerControl;
 
     void Awake()
     {
-        _enemyControl = GetComponent<EnemyController>();
-        _playerControl = GetComponent<PlayerController>();
+        enemyControl = GetComponent<EnemyController>();
+        playerControl = GetComponent<PlayerController>();
         life = maxLife;
     }
     public void TakeDamage(int damage)
@@ -26,13 +26,13 @@ public class LifeController : MonoBehaviour
         {
             if(this.CompareTag("Player"))
             {
-                _playerControl.playerIsAlive = false;
-                _playerControl.rb.simulated = false;
-                _playerControl._collider.enabled = false;
+                playerControl.playerIsAlive = false;
+                playerControl.rb.simulated = false;
+                playerControl.Collider.enabled = false;
             }
             if (this.CompareTag("Enemy"))
             {
-                _enemyControl.enemyIsAlive = false;
+                enemyControl.enemyIsAlive = false;
             }
 
             Destroy(gameObject, 1f);
@@ -41,7 +41,7 @@ public class LifeController : MonoBehaviour
         {
             if (this.CompareTag("Enemy"))
             {
-                _enemyControl.enemyIsHit = true;
+                enemyControl.enemyIsHit = true;
             }
         }
     }

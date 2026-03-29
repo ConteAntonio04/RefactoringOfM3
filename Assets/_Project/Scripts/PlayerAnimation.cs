@@ -6,18 +6,18 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Animator animator;
 
-    private PlayerController _playerController;
+    private PlayerController playerController;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        _playerController = GetComponent<PlayerController>();
+        playerController = GetComponent<PlayerController>();
     }
     void Update()
     {
-        if (_playerController.playerIsAlive)
+        if (playerController.playerIsAlive)
         {
-            Vector2 direction = _playerController.direction;
+            Vector2 direction = playerController.direction;
             bool isWalking = direction != Vector2.zero;
             animator.SetBool("IsWalking", isWalking);
             if (isWalking)

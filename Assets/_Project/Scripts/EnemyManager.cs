@@ -6,20 +6,20 @@ public class EnemyManager : MonoBehaviour
 {
     public List<EnemyController> listEnemies = new List<EnemyController>();
 
-    public void AddEnemy(EnemyController _enemy)
+    public void AddEnemy(EnemyController enemy)
     {
-        if (_enemy == null) return;
+        if (enemy == null) return;
 
-        if (!listEnemies.Contains(_enemy))
+        if (!listEnemies.Contains(enemy))
         {
-            listEnemies.Add(_enemy);
+            listEnemies.Add(enemy);
         }
     }
 
-    public void RemoveEnemy(EnemyController _enemy)
+    public void RemoveEnemy(EnemyController enemy)
     {
-        if (_enemy == null) return;
+        if (enemy == null) return;
 
-        listEnemies.Remove(_enemy);
+        listEnemies.Remove(enemy);
     }
 }
