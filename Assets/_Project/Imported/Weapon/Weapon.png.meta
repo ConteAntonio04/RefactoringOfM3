@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: c338bf09f2859de4ca06d75ee485f292
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Weapon_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 84
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627b7e09818a1be46a44594d00534a6c
+      internalID: -930816520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Weapon_0: -192224407
+      Weapon_1: -1355581961
+      Weapon_10: 218861245
+      Weapon_11: 971019908
+      Weapon_12: 2004284983
+      Weapon_13: -1537419885
+      Weapon_14: 257477925
+      Weapon_15: 509101990
+      Weapon_16: -104527518
+      Weapon_17: 529805139
+      Weapon_18: 30462654
+      Weapon_19: -1693957747
+      Weapon_2: 1014457249
+      Weapon_20: 1146550179
+      Weapon_21: -1579529660
+      Weapon_22: 2125155256
+      Weapon_23: 475951316
+      Weapon_24: -1129572563
+      Weapon_25: 909556715
+      Weapon_26: -25211209
+      Weapon_27: -930816520
+      Weapon_28: 708285578
+      Weapon_29: 353914753
+      Weapon_3: 1537439961
+      Weapon_30: -1037558011
+      Weapon_31: -1396563358
+      Weapon_32: -300285307
+      Weapon_33: 1421686400
+      Weapon_34: 1945361829
+      Weapon_35: -683940579
+      Weapon_36: 767624869
+      Weapon_37: -1744564044
+      Weapon_38: 323199590
+      Weapon_39: -2050522914
+      Weapon_4: 292623874
+      Weapon_40: 1549505026
+      Weapon_41: -790647049
+      Weapon_42: 114356548
+      Weapon_43: -1080035164
+      Weapon_44: 1729879749
+      Weapon_45: 458920048
+      Weapon_46: 1820465284
+      Weapon_47: -1086133930
+      Weapon_48: -1961165895
+      Weapon_49: 450858295
+      Weapon_5: 578700784
+      Weapon_50: -1660445755
+      Weapon_51: -1229112121
+      Weapon_52: -315828304
+      Weapon_53: 249074611
+      Weapon_54: -197671073
+      Weapon_55: 927479740
+      Weapon_56: 889553911
+      Weapon_57: 1875776567
+      Weapon_58: 2023592159
+      Weapon_59: 1370323538
+      Weapon_6: 810905786
+      Weapon_60: 148162196
+      Weapon_61: -564161900
+      Weapon_62: 2006810428
+      Weapon_63: 1144563170
+      Weapon_64: -62691592
+      Weapon_65: 1503604900
+      Weapon_66: -622188891
+      Weapon_67: -1226902116
+      Weapon_68: 213133837
+      Weapon_69: -2067457165
+      Weapon_7: -1130517829
+      Weapon_70: 647584968
+      Weapon_71: 1551348470
+      Weapon_8: 1685544072
+      Weapon_9: -2031570486
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
