@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
- 
     public Rigidbody2D rb;
 
     [SerializeField]
@@ -18,7 +17,6 @@ public class PlayerController : MonoBehaviour
 
     public Collider2D Collider;
 
-    public bool canMove = true;
     void Awake()
     {
         if (rb == null)
@@ -33,8 +31,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!canMove) return;
-   
         if (playerIsAlive)
         {
             h = Input.GetAxis("Horizontal");
