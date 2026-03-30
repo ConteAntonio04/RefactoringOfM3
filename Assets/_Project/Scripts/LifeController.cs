@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class LifeController : MonoBehaviour
@@ -13,15 +14,37 @@ public class LifeController : MonoBehaviour
 
     private PlayerController playerControl;
 
+    [Header("UI")]
+    [SerializeField]
+    private Slider healtSlider;
+
     void Awake()
     {
         enemyControl = GetComponent<EnemyController>();
         playerControl = GetComponent<PlayerController>();
         life = maxLife;
+        SetupSlider();
+        UpdateHealtBar();
+    }
+    void SetupSlider()
+    {
+        if(healtSlider != null)
+        {
+            healtSlider.maxValue = maxLife;
+            healtSlider.value = life;
+        }
+    }
+    void UpdateHealtBar()
+    {
+        if (healtSlider != null)
+        {
+            healtSlider.value = life;
+        }
     }
     public void TakeDamage(int damage)
     {
         life -= damage;
+        UpdateHealtBar();
         if (life <= 0)
         {
             if(this.CompareTag("Player"))
